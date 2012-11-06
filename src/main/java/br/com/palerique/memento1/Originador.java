@@ -2,8 +2,8 @@ package br.com.palerique.memento1;
 
 /**
  * 
- * Pessoa é o objeto que tem o estado interno que desejamos recuperar. O memento
- * representará o estado interno do objeto Pessoa!!!
+ * Originador é o objeto que tem o estado interno que desejamos recuperar. O
+ * memento representará o estado interno do objeto Originador!!!
  * 
  * @author ph - palerique@gmail.com
  * 
@@ -12,18 +12,18 @@ public class Originador {
 	private String estado;
 
 	public void setEstado(String estado) {
-		System.out.println("Pessoa: Definindo estado para " + estado);
+		System.out.println("Originador: Definindo estado para " + estado);
 		this.estado = estado;
 	}
 
 	public Memento reproduzirEstadoEmUmMemento() {
-		System.out.println("Pessoa: Salvando no Memento.");
+		System.out.println("Originador: Salvando no Memento.");
 		return new Memento(estado);
 	}
 
 	public void recuperarDoMemento(Memento memento) {
 		estado = memento.recuperarEstadoSalvo();
-		System.out.println("Pessoa: Estado após recuperar do Memento: "
+		System.out.println("Originador: Estado após recuperar do Memento: "
 				+ estado);
 	}
 

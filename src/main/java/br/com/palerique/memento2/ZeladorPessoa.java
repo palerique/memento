@@ -15,22 +15,6 @@ import br.com.palerique.memento2.Pessoa.Memento;
  */
 public class ZeladorPessoa {
 
-	/*
-	 * public static void main(String[] args) { List<Originador.Memento>
-	 * estadosSalvos = new ArrayList<Originador.Memento>();
-	 * 
-	 * Originador originador = new Originador(); originador .setEstado(
-	 * "A aranha arranha a rã. A rã arranha a aranha. Nem a aranha arranha a rã. Nem a rã arranha a aranha."
-	 * ); originador.setEstado("Teto limpo chão sujo");
-	 * estadosSalvos.add(originador.salvarParaOMemento());
-	 * originador.setEstado("Três pratos de trigo para três tigres tristes.");
-	 * 
-	 * estadosSalvos.add(originador.salvarParaOMemento());
-	 * originador.setEstado("O peito do pé de Pedro é preto.");
-	 * 
-	 * originador.recuperarDoMemento(estadosSalvos.get(1)); }
-	 */
-
 	private List<Pessoa.Memento> mementos;
 	private Memento ultimo;
 
